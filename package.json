@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "remark some function",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c && npm run build:tsc",
+    "dev": "yarn run build -- --watch",
+    "build": "tsup src/index.ts && yarn run build:tsc",
     "build:tsc": "tsc --emitDeclarationOnly"
   },
   "keywords": [],
@@ -16,11 +16,8 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.4",
     "prettier": "^3.0.3",
-    "rollup": "^3.29.2",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.35.0"
+    "tsup": "^7.2.0"
   },
   "files": [
     "dist/*",
