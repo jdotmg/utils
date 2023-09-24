@@ -1,6 +1,6 @@
 {
   "name": "jdotmg-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "remark some function",
   "type": "commonjs",
   "main": "dist/index.min.js",
