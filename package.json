@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "remark some function",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c && npm run build:tsc",
+    "build": "yarn run rollup -c && yarn run build:tsc",
     "build:tsc": "tsc --emitDeclarationOnly"
   },
   "keywords": [],
